@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    /* fallback universal */
+    min-height: 100svh;
+    /* Safari/iOS: viewport “pequena” estável */
+    min-height: 100dvh;
+    /* modernos: viewport dinâmica (ajusta com barra) */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body{
+    display: grid;
+    place-content: center;
+    background-color: #141414;
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+}
+
+div.container{
+    background-color: #1F1F1F;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+div.card{
+    padding: 5px;
+}
+
+div.container img{
+    display: inline;
+    width: 25%;
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+div.container h1{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+div.container address{
+    color: hsl(75, 94%, 57%);
+    margin-top: 5px;
+}
+
+div.container ul{
+    display: flex;
+    flex-flow: column wrap;
+    color: rgb(228, 228, 228);
+}
+
+div.container ul li{
+    list-style: none;
+    margin-top: 12px;
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.4s, color 0.4s;
+    color: rgb(228, 228, 228);
+}
+
+div.container p{
+    font-size: 14px;
+    margin: 15px auto;
+}
+
+div.container ul li:hover{
+    color: #141414;
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+
+div.container ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 340px) {
+    div.container{
+        padding: 20px;
+        max-width: 430px;
+    }
+}
